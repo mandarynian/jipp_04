@@ -10,7 +10,7 @@ Tlok::~Tlok()
 {
 }
 
-double Tlok::ObObj() // obliczamy pojemnosc pojedyńczego tłoka 
+double Tlok::ObObj() // obliczamy pojemności skokowej fiata 126p 
 {
 	double dObj = 0.0;
 	double dPI = 3.14;

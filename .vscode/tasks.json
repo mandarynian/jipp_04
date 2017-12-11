@@ -6,7 +6,7 @@
         {
             "label": "g++",
             "type": "shell",
-            "command": "g++ main.cpp silnik.cpp tlok.cpp silnik.h tlok.h -o a.exe"
+            "command": "g++ -Wall -c main.cpp silnik.cpp tlok.cpp | g++ main.o silnik.o tlok.o -o a.exe"
         }
     ]
 }

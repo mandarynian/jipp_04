@@ -1,5 +1,3 @@
-#include "Silnik.h"
-
 #ifndef _tlok_H_
 #define _tlok_H_
 
