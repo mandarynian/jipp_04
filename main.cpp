@@ -1,3 +1,5 @@
+// program oblicza pojemnosc skokowa dla fiata 126p posiadajacego 2 tloki  :) 
+
 #include "silnik.h"
 #include "tlok.h"
 
@@ -7,15 +9,15 @@
 int 
 main(void)
 {
+	int nTloki;
 	Silnik *pSilnik1;
-	Tlok *pTloki;
+	std::cout << "Wprowadz liczbe tlokow: ";
+	std::cin >> nTloki;
 
-	pSilnik1 = new Silnik();
-	pSilnik1->UstawLiczbeTlokow();
+	pSilnik1 = new Silnik(nTloki);
 
-	pTloki = new Tlok[pSilnik1->LiczbaTlokow()];
-
-	std::cout << pTloki->ObObj(*pSilnik1);
+	std::cout << pSilnik1->ObjSkokowa(); 
+	std::cout << " ccm" << std::endl;
 
 	return 0;
 }

@@ -9,7 +9,7 @@ public:
   Tlok();
   ~Tlok();
 
-  double ObObj(Silnik &);
+  double ObObj();
 
 private:
   double m_dPojemnosc;
